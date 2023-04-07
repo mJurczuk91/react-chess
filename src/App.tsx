@@ -1,13 +1,13 @@
 import './App.css';
-import List from './components/list';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import Board from './components/board';
 
 
 function App() {
   return (
     <DndProvider backend={HTML5Backend}>
-      <List />
+      <Board />
     </DndProvider>
   );
 }
